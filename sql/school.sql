@@ -1,5 +1,5 @@
 CREATE DATABASE IF NOT EXISTS school;
-CREATE TABLE IF NOT EXISTS alunos (
+CREATE TABLE IF NOT EXISTS aluno (
   matricula SERIAL PRIMARY KEY,
   cpf INTEGER UNIQUE NOT NULL,
   nome TEXT NOT NULL,
@@ -15,5 +15,8 @@ CREATE TABLE IF NOT EXISTS aulas(
   id_professor INTEGER NOT NULL,
   matricula_aluno INTEGER,
   FOREIGN KEY (id_professor) REFERENCES professores(id),
-  FOREIGN KEY (matricula_aluno) REFERENCES alunos(matricula)
+  FOREIGN KEY (matricula_aluno) REFERENCES aluno(matricula)
 );
+-- Rename table aluno to alunos
+ALTER TABLE aluno
+  RENAME TO alunos;
