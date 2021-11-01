@@ -11,3 +11,9 @@ CREATE TABLE IF NOT EXISTS professores(
   nome TEXT NOT NULL,
   materia TEXT
 );
+CREATE TABLE IF NOT EXISTS aulas(
+  id_professor INTEGER NOT NULL,
+  matricula_aluno INTEGER,
+  FOREIGN KEY (id_professor) REFERENCES professores(id),
+  FOREIGN KEY (matricula_aluno) REFERENCES alunos(matricula)
+);
