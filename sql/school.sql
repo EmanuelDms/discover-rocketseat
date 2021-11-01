@@ -5,3 +5,9 @@ CREATE TABLE IF NOT EXISTS alunos (
   nome TEXT NOT NULL,
   responsavel TEXT
 );
+CREATE TABLE IF NOT EXISTS professores(
+  id SERIAL PRIMARY KEY,
+  cpf INTEGER UNIQUE NOT NULL,
+  nome TEXT NOT NULL,
+  materia TEXT
+);
