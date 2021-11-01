@@ -1,1 +1,7 @@
 CREATE DATABASE IF NOT EXISTS school;
+CREATE TABLE IF NOT EXISTS alunos (
+  matricula SERIAL PRIMARY KEY,
+  cpf INTEGER UNIQUE NOT NULL,
+  nome TEXT NOT NULL,
+  responsavel TEXT
+);
