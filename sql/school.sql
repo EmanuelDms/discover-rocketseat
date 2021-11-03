@@ -26,3 +26,5 @@ ALTER TABLE aula
 -- Rename table professor to professores
 ALTER TABLE professor
   RENAME TO professores;
+-- Rename COLUMN
+-- ALTER TABLE aulas RENAME COLUMN id_aluno TO matricula_aluno;
