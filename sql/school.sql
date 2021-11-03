@@ -28,3 +28,5 @@ ALTER TABLE professor
   RENAME TO professores;
 -- Rename COLUMN
 -- ALTER TABLE aulas RENAME COLUMN id_aluno TO matricula_aluno;
+-- Apagar tabelas
+-- DROP TABLE alunos
